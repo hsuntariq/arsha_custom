@@ -1,0 +1,57 @@
+:root {
+  --primary: #37517e;
+}
+
+.top-section {
+  background-color: var(--primary) !important;
+}
+
+.top-section a {
+  color: white !important;
+}
+
+.dropdown-menu a {
+  color: black !important;
+}
+
+.anim-image {
+  animation: up-down 1.4s linear infinite alternate;
+}
+
+@keyframes up-down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+.text-blue {
+  color: var(--primary);
+  font-weight: bolder;
+}
+
+.gray {
+  height: 2px;
+  width: 100%;
+  background-color: lightgray;
+  margin: auto;
+  position: relative;
+}
+
+.max-width {
+  width: max-content;
+  margin: auto;
+}
+
+.blue {
+  width: 30%;
+  margin: auto;
+  height: 4px;
+  background-color: var(--bs-info);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
